@@ -1,0 +1,89 @@
+.game{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gameInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 0;
+}
+.firstColumn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.firstColumn div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+}
+.firstColumn div svg{
+    background-color: white;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+.secondColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondColumn .difficulty{
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+.currentTarget {
+    width: 100%;
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.currentTarget.win{
+    background-color: green;
+}
+.currentTarget.lose{
+    background-color: red;
+}
+.thirdColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+.thirdColumn svg{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+.settingsButton{
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.settingsButton svg{
+    height: 30px;
+    width: 30px;
+}

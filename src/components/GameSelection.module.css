@@ -1,0 +1,86 @@
+.gameSelection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 30px 0;
+}
+.difficulty {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.difficultyInput option,
+.difficultyInput {
+    background-color: #A0E0FF;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: none;
+}
+.gameOperation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+.gameOperationButton.selectedOperation{
+    border-color: rgb(255, 255, 255);
+    background-color: #66e966;
+}
+.gameOperationButton {
+    height: 50px;
+    width: 100%;
+    background-color:#A0E0FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.gameMode {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+.gameMode button {
+    height: 50px;
+    width: 100%;
+    background-color: #A0E0FF;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.gameMode button.selectedGameModeButton {
+    border-color: rgb(255, 255, 255);
+    background-color: #66e966;
+}
+.startButton {
+    height: 50px;
+    width: 100%;
+    background-color: #66e966;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+}
