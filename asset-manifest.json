@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/math-rush/static/css/main.b6e546b5.css",
+    "main.js": "/math-rush/static/js/main.5eb6e800.js",
+    "index.html": "/math-rush/index.html",
+    "main.b6e546b5.css.map": "/math-rush/static/css/main.b6e546b5.css.map",
+    "main.5eb6e800.js.map": "/math-rush/static/js/main.5eb6e800.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6e546b5.css",
+    "static/js/main.5eb6e800.js"
+  ]
+}
