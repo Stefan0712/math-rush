@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/math-rush/static/css/main.b6e546b5.css",
-    "main.js": "/math-rush/static/js/main.5eb6e800.js",
+    "main.css": "/math-rush/static/css/main.c504c874.css",
+    "main.js": "/math-rush/static/js/main.38dbe00b.js",
     "index.html": "/math-rush/index.html",
-    "main.b6e546b5.css.map": "/math-rush/static/css/main.b6e546b5.css.map",
-    "main.5eb6e800.js.map": "/math-rush/static/js/main.5eb6e800.js.map"
+    "main.c504c874.css.map": "/math-rush/static/css/main.c504c874.css.map",
+    "main.38dbe00b.js.map": "/math-rush/static/js/main.38dbe00b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6e546b5.css",
-    "static/js/main.5eb6e800.js"
+    "static/css/main.c504c874.css",
+    "static/js/main.38dbe00b.js"
   ]
 }
