@@ -1,0 +1,39 @@
+.endGame {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.gameStats{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.endGame button {
+    height: 50px;
+    width: 100%;
+    background-color: #66e966;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
