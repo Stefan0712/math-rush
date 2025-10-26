@@ -84,3 +84,21 @@
     border-radius: 5px;
     border: none;
 }
+.durationSlider {
+    width: 100%;
+    border: none;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.durationSlider input{
+    width: 100%;
+}
+.durationSlider .durationText{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

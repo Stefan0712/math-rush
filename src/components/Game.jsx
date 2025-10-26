@@ -8,7 +8,7 @@ import Wrong from '../icons/Wrong';
 import Correct from '../icons/Correct';
 import Pause from '../icons/Pause';
 
-const Game = ({difficulty, setShowPauseMenu, setRoundData, setCurrentScreen}) => {
+const Game = ({difficulty, setShowPauseMenu, setRoundData, setCurrentScreen, duration}) => {
     const [currentScore, setCurrentScore] = useState(0);
     const [target, setTarget] = useState(0);
     const [currentSelection, setCurrentSelection] = useState([]);
@@ -17,7 +17,7 @@ const Game = ({difficulty, setShowPauseMenu, setRoundData, setCurrentScreen}) =>
     const [highScore, setHighScore] = useState(0);
     const [roundStatus, setRoundStatus] = useState("running"); // running, win, lose
 
-    const [timeLeft, setTimeLeft] = useState(60); // Timer
+    const [timeLeft, setTimeLeft] = useState(duration ?? 60); // Timer
     // Round Data
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [wrongAnswers, setWrongAnswers] = useState(0);

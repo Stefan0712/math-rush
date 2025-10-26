@@ -15,6 +15,7 @@ function App() {
   const [gameMode, setGameMode] = useState('infinite');  // Infinite, survival
   const [showPauseMenu, setShowPauseMenu] = useState(false);
   const [roundData, setRoundData] = useState(null) // {maxStreak, score, rightAnswers, wrongAnswers}
+  const [duration, setDuration] = useState(60) // Seconds
 
   return (
     <div className="App">
@@ -22,8 +23,8 @@ function App() {
       <div className='game-container'>
         { currentScreen === 'menu' ? <Menu switchScreen={setCurrentScreen} /> 
         : currentScreen === 'end' ? <EndGame setCurrentScreen={setCurrentScreen} gameData={roundData} />
-        : currentScreen === 'game-selection' ? <GameSelection switchScreen={setCurrentScreen} difficulty={difficulty} setDifficulty={setDifficulty} gameMode={gameMode} setGameMode={setGameMode} operations={operations} setOperations={setOperations}/> 
-        : currentScreen === "game" ? <Game setCurrentScreen={setCurrentScreen} setRoundData={setRoundData} setShowPauseMenu={setShowPauseMenu} switchScreen={setCurrentScreen} difficulty={difficulty} operations={operations} gameMode={gameMode}/> : null}
+        : currentScreen === 'game-selection' ? <GameSelection duration={duration} setDuration={setDuration} switchScreen={setCurrentScreen} difficulty={difficulty} setDifficulty={setDifficulty} gameMode={gameMode} setGameMode={setGameMode} operations={operations} setOperations={setOperations}/> 
+        : currentScreen === "game" ? <Game duration={duration} setCurrentScreen={setCurrentScreen} setRoundData={setRoundData} setShowPauseMenu={setShowPauseMenu} switchScreen={setCurrentScreen} difficulty={difficulty} operations={operations} gameMode={gameMode}/> : null}
       </div>
     </div>
   );

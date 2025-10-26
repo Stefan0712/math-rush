@@ -6,7 +6,7 @@ import Multiply from '../icons/Multiply';
 import Divide from '../icons/Divide';
 import PlayIcon from '../icons/Play';
 
-const GameSelection = ({switchScreen, setDifficulty, difficulty, operations, setOperations, gameMode, setGameMode}) => {
+const GameSelection = ({switchScreen, setDifficulty, difficulty, operations, duration, setDuration, setOperations, gameMode, setGameMode}) => {
     return ( 
         <div className={styles.gameSelection}>
             <h2>Play</h2>
@@ -18,6 +18,13 @@ const GameSelection = ({switchScreen, setDifficulty, difficulty, operations, set
                 <p>{difficulty.name} selected. {difficulty.desc}</p>
 
             </div>
+            <fieldset className={styles.durationSlider}>
+                <div className={styles.durationText}>
+                    <h3>Duration</h3>
+                    <label> {duration} seconds</label>
+                </div>
+                <input type='range' onChange={(e)=>setDuration(e.target.value)} value={duration} min={30} max={150} step={5} />
+            </fieldset>
             <h3>Select operation</h3>
             <div className={styles.gameOperation}>
                 <button 
